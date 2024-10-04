@@ -9,7 +9,7 @@ document.getElementById("donateBtn").addEventListener("click", function () {
 // Função para carregar e exibir dados da planilha do Google Sheets
 function loadGoogleSheetData() {
     // ID da planilha do Google Sheets
-    const spreadsheetId = '16BqeIGtsO47jb6yABaJyLEiE29qF6kPan6ZHlg6TsKQ';
+    const spreadsheetId = '1Mb5hnjECtwo1AIN7ndc2hiamwxBZkMmf-Y-KFgAm-FE';
     // ID da planilha dentro do documento (geralmente 0 para a primeira planilha)
     const sheetId = 0;
 
@@ -42,7 +42,7 @@ function loadGoogleSheetData() {
 // Função para inicializar a API do Google Sheets
 function initGoogleSheetsApi() {
     gapi.client.init({
-        apiKey: 'AIzaSyDunp5UoDY4LeKYFo92ByH9MgIYiVehBaI',
+        apiKey: 'AIzaSyBmUFSFBk6QYRIKKiiwzJ-xaVCmWE_eEyA',
         discoveryDocs: ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
     }).then(function() {
         loadGoogleSheetData();
