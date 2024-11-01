@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="Galeria" href="galeria.html">
+    <title>Escola Estadual Padre Piccinini</title>
+</head>
+
+<body>
+    <!-- Barra de navegação Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Escola Estadual Padre Piccinini</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#actions-table">Projetos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#impact">Impacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#donate">Contato</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="galeria.htmlt">Galeria</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <header class="text-center">
+            <h1>Escola Estadual Padre Piccinini</h1>
+        </header>
+
+       
+        <section class="about mt-5" id="about">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Sobre a Escola</h2>
+                    <p>A Escola Estadual Padre Piccinini, localizada em Paraguaçu, Minas Gerais, é uma instituição de ensino que há anos se dedica à formação educacional de seus alunos. Com uma trajetória marcada por excelência acadêmica e comprometimento com a comunidade, a escola tem como missão proporcionar um ambiente de aprendizado inclusivo e de qualidade.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/piccinini.jpg" alt="Imagem sobre a Escola" class="img-fluid" width="350" height="300">
+                </div>
+            </div>
+        </section>
+
+        <section class="project-actions mt-5" id="actions-table">
+            <h2>Ações do Projeto</h2>
+            <table class="table table-striped">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Ação</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dados CSV serão inseridos aqui via JavaScript -->
+                </tbody>
+            </table>
+        </section>
+
+        <section class="impact mt-5" id="impact">
+            <h2>Nosso Impacto</h2>
+            <p>Já ajudamos centenas de pessoas em nossa comunidade, fornecendo alimentos, educação, treinamento profissional e muito mais.</p>
+        </section>
+
+        <section class="donate mt-5 text-center" id="donate">
+            <h2>Como você pode ajudar nossa instituição</h2>
+            <p>Contribua para o nosso projeto social e faça a diferença na vida das pessoas necessitadas.</p>
+            <button class="btn btn-primary" id="donateBtn">Faça uma Doação</button>
+            <br/>
+            <iframe width="600" height="450" frameborder="0" style="border:0"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBmUFSFBk6QYRIKKiiwzJ-xaVCmWE_eEyA&q=Escola Estadual Padre Piccinini"
+                allowfullscreen>
+            </iframe>
+        </section>
+    </div>
+
+    
+    <footer class="bg-dark text-white text-center mt-5 py-3">
+        <div class="social-icons mb-2">
+            <p>Contato: (35) 3267-2006 | <a href="mailto:escola.173533@educacao.mg.gov.br" style="color: white;">escola.173533@educacao.mg.gov.br</a></p>
+            <a href="https://web.facebook.com/people/Piccinini-Piccinini/pfbid02tjEPGJtuDySbPp6JwG6eKZtrvrhU4B1w8j5wi5YtN9hJvqA6NWrL55KLSc9HjFUml/" target="_blank">
+                <img src="Imagem/facebook.png" alt="Facebook" width="40" height="40">
+            </a>
+            <a href="https://www.instagram.com/explore/locations/1015726334/" target="_blank">
+                <img src="imagem/instagram.png" alt="Instagram" width="40" height="40">
+            </a>
+        </div>
+        <p>&copy; 2024 Todos os direitos reservados.</p>
+    </footer>
+    
+
+    <!-- Inclua o Bootstrap JavaScript e o jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
