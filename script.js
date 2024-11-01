@@ -1,10 +1,3 @@
-// Função para lidar com o clique no botão de doação
-document.getElementById("donateBtn").addEventListener("click", function () {
-    // Substitua esta linha com a lógica real de redirecionamento para uma página de doação
-    alert("Redirecionando para a página de doação");
-});
-
-
 
 // Função para carregar e exibir dados da planilha do Google Sheets
 function loadGoogleSheetData() {
