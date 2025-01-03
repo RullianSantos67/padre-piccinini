@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">
+            <img src="Imagem/apple-touch-icon.png" alt="Icone da Escola">
+        </a>
+        <a class="navbar-brand" href="index.html">Escola Estadual Padre Piccinini</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Galeria -->
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Galeria de Fotos</h1>
+        <div class="row gallery">
+            <div class="col-md-4 mb-4">
+                <img src="assets/12.jpg" alt="Foto 1" class="img-thumbnail" data-toggle="modal" data-target="#imageModal" onclick="showImage('assets/12.jpg')">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="assets/2.jpg" alt="Foto 2" class="img-thumbnail" data-toggle="modal" data-target="#imageModal" onclick="showImage('assets/2.jpg')">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="assets/3.jpg" alt="Foto 3" class="img-thumbnail" data-toggle="modal" data-target="#imageModal" onclick="showImage('assets/3.jpg')">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="assets/4.jpg" alt="Foto 4" class="img-thumbnail" data-toggle="modal" data-target="#imageModal" onclick="showImage('assets/4.jpg')">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="assets/5.jpg" alt="Foto 5" class="img-thumbnail" data-toggle="modal" data-target="#imageModal" onclick="showImage('assets/5.jpg')">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="assets/6.jpg" alt="Foto 6" class="img-thumbnail" data-toggle="modal" data-target="#imageModal" onclick="showImage('assets/6.jpg')">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="assets/ginasio.jpg" alt="Foto 7" class="img-thumbnail" data-toggle="modal" data-target="#imageModal" onclick="showImage('assets/ginasio.jpg')">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="assets/ginasio1.jpg" alt="Foto 8" class="img-thumbnail" data-toggle="modal" data-target="#imageModal" onclick="showImage('assets/ginasio1.jpg')">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="assets/ginasio2.jpg" alt="Foto 9" class="img-thumbnail" data-toggle="modal" data-target="#imageModal" onclick="showImage('assets/ginasio2.jpg')">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="assets/ginasio3.jpg" alt="Foto 10" class="img-thumbnail" data-toggle="modal" data-target="#imageModal" onclick="showImage('assets/ginasio3.jpg')">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="assets/ginasio4.jpg" alt="Foto 11" class="img-thumbnail" data-toggle="modal" data-target="#imageModal" onclick="showImage('assets/ginasio4.jpg')">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="assets/ginasioev.jpg" alt="Foto 12" class="img-thumbnail" data-toggle="modal" data-target="#imageModal" onclick="showImage('assets/ginasioev.jpg')">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="assets/ginasioev10.jpg" alt="Foto 13" class="img-thumbnail" data-toggle="modal" data-target="#imageModal" onclick="showImage('assets/ginasioev10.jpg')">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="assets/ginasioev2.jpg" alt="Foto 14" class="img-thumbnail" data-toggle="modal" data-target="#imageModal" onclick="showImage('assets/ginasioev2.jpg')">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="assets/ginasioev3.jpg" alt="Foto 15" class="img-thumbnail" data-toggle="modal" data-target="#imageModal" onclick="showImage('assets/ginasioev3.jpg')">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="assets/ginasioev4.jpg" alt="Foto 16" class="img-thumbnail" data-toggle="modal" data-target="#imageModal" onclick="showImage('assets/ginasioev4.jpg')">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="assets/ginasioev5.jpg" alt="Foto 17" class="img-thumbnail" data-toggle="modal" data-target="#imageModal" onclick="showImage('assets/ginasioev5.jpg')">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="assets/ginasioev6.jpg" alt="Foto 18" class="img-thumbnail" data-toggle="modal" data-target="#imageModal" onclick="showImage('assets/ginasioev6.jpg')">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="assets/ginasioev7.jpg" alt="Foto 19" class="img-thumbnail" data-toggle="modal" data-target="#imageModal" onclick="showImage('assets/ginasioev7.jpg')">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="assets/ginasioev8.jpg" alt="Foto 20" class="img-thumbnail" data-toggle="modal" data-target="#imageModal" onclick="showImage('assets/ginasioev8.jpg')">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="assets/ginasioev9.jpg" alt="Foto 21" class="img-thumbnail" data-toggle="modal" data-target="#imageModal" onclick="showImage('assets/ginasioev9.jpg')">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="assets/ginasioformando2.jpg" alt="Foto 22" class="img-thumbnail" data-toggle="modal" data-target="#imageModal" onclick="showImage('assets/ginasioformando2.jpg')">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="assets/ginasioformando3.jpg" alt="Foto 23" class="img-thumbnail" data-toggle="modal" data-target="#imageModal" onclick="showImage('assets/ginasioformando3.jpg')">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="assets/ginasioformandos.jpg" alt="Foto 24" class="img-thumbnail" data-toggle="modal" data-target="#imageModal" onclick="showImage('assets/ginasioformandos.jpg')">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="assets/ginasiofoto.jpg" alt="Foto 25" class="img-thumbnail" data-toggle="modal" data-target="#imageModal" onclick="showImage('assets/ginasiofoto.jpg')">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="assets/ginasiofoto2.jpg" alt="Foto 26" class="img-thumbnail" data-toggle="modal" data-target="#imageModal" onclick="showImage('assets/ginasiofoto2.jpg')">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="assets/ginasiomedalha.jpg" alt="Foto 27" class="img-thumbnail" data-toggle="modal" data-target="#imageModal" onclick="showImage('assets/ginasiomedalha.jpg')">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="assets/fototop.jpg" alt="Foto 28" class="img-thumbnail" data-toggle="modal" data-target="#imageModal" onclick="showImage('assets/fototop.jpg')">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="assets/foto.jpg" alt="Foto 29" class="img-thumbnail" data-toggle="modal" data-target="#imageModal" onclick="showImage('assets/foto.jpg')">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="assets/foto1.jpg" alt="Foto 30" class="img-thumbnail" data-toggle="modal" data-target="#imageModal" onclick="showImage('assets/foto1.jpg')">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para ampliar imagens -->
+    <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img id="modalImage" class="modal-img" src="" alt="Imagem Ampliada">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Todos os direitos reservados.</p>
+    </footer> 
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
