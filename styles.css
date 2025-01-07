@@ -71,10 +71,17 @@
     transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
 }
 
-#actions-cards{
-    margin: 20px;
-    padding: 30px 0;
-}
+#titulo {
+    text-align: center; 
+    margin-bottom: 50px;
+  
+  #actions-cards-container {
+    display: flex;       /* Usa Flexbox */
+    justify-content: center;  /* Alinha o conteúdo ao centro horizontalmente */
+    align-items: center;      /* Alinha o conteúdo ao centro verticalmente */
+    flex-wrap: wrap;      /* Permite que os itens se ajustem quando necessário */
+  }
+  
 footer#footer1 {
     margin-top: 0 !important;
 }
