@@ -19,8 +19,7 @@ function loadGoogleSheetData() {
         data.forEach(function(row) {
             // Supondo que a primeira coluna é 'Ação', a segunda é 'Descrição' e a terceira é a URL da imagem
             const acao = row[0] || '';  // Ajuste conforme o número de colunas
-            const descricao = row[1] || '';
-            const imagemUrl = row[2] || ''; // URL da imagem na terceira coluna
+            const imagemUrl = row[1] || ''; // URL da imagem na terceira coluna
 
             // Criação do cartão
             const card = document.createElement('div');
@@ -40,7 +39,7 @@ function loadGoogleSheetData() {
                     ${imgTag} <!-- A imagem será colocada aqui -->
                     <div class="card-body">
                         <h5 class="card-title">${acao}</h5>
-                        <p class="card-text">${descricao}</p>
+                       
                     </div>
                 </div>
             `;
