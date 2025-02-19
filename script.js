@@ -89,7 +89,7 @@ function initClient() {
   function carregarImagens() {
     const params = {
       spreadsheetId: '1h9GmC2sEnLf8mBTapQ3MiSySTRk5zHgsL1t6-2q9XsY',
-      range: 'A2:A300',
+      range: 'A2:A1000',
     };
   
     gapi.client.sheets.spreadsheets.values.get(params).then(function(response) {
