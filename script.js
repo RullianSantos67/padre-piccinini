@@ -66,3 +66,63 @@ gapi.load('client', initGoogleSheetsApi);
 function showImage(src) {
     document.getElementById('modalImage').src = src;
 }
+
+
+// Função para inicializar a API do Google
+function initClient() {
+    gapi.client.init({
+      apiKey: 'AIzaSyBmUFSFBk6QYRIKKiiwzJ-xaVCmWE_eEyA',
+      discoveryDocs: ["https://sheets.googleapis.com/$discovery/rest?version=v4"],
+    }).then(function () {
+      carregarImagens();
+    }, function(error) {
+      console.error("Erro ao inicializar o cliente", error);
+    });
+  }
+  
+  // Função para carregar a biblioteca e inicializar o cliente
+  function handleClientLoad() {
+    gapi.load('client', initClient);
+  }
+  
+  // Função para carregar imagens da planilha
+  function carregarImagens() {
+    const params = {
+      spreadsheetId: '1h9GmC2sEnLf8mBTapQ3MiSySTRk5zHgsL1t6-2q9XsY',
+      range: 'A2:A300',
+    };
+  
+    gapi.client.sheets.spreadsheets.values.get(params).then(function(response) {
+      const imagens = response.result.values;
+      const galleryDiv = document.getElementById("gallery");
+  
+      imagens.forEach(url => {
+        if (url[0]) {
+          const colDiv = document.createElement("div");
+          colDiv.className = "col-md-4 mb-4";
+  
+          const img = document.createElement("img");
+          img.src = url[0];
+          img.alt = "Imagem";
+          img.className = "img-thumbnail";
+          img.setAttribute("data-toggle", "modal");
+          img.setAttribute("data-target", "#imageModal");
+          img.setAttribute("onclick", `showImage('${url[0]}')`);
+  
+          colDiv.appendChild(img);
+          galleryDiv.appendChild(colDiv);
+        }
+      });
+    }, function(error) {
+      console.error("Erro ao carregar dados da planilha", error);
+    });
+  }
+  
+  // Função para exibir a imagem no modal
+  function showImage(src) {
+    document.getElementById('modalImage').src = src;
+  }
+  
+  // Carregar o cliente após a janela ser carregada
+  window.onload = handleClientLoad;
+  
